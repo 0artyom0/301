@@ -1,0 +1,58 @@
+.dropdown {
+  width: 100%;
+  position: relative;
+}
+.dropdown .btn {
+  z-index: 2;
+  text-transform: uppercase;
+  position: relative;
+  font-size: clamp(0.8125rem, 0.7514rem + 0.3053vw, 0.9375rem);
+}
+.dropdownItems {
+  border-radius: 0px 0px 45px 45px;
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  padding-top: 15px;
+  padding-bottom: 18px;
+  position: absolute;
+  width: 100%;
+  z-index: 5;
+  left: 0;
+  animation: rotateMenu 400ms ease-in-out forwards;
+  transform-origin: top center;
+  perspective: 1000px;
+}
+@keyframes rotateMenu {
+  0% {
+    transform: rotateX(-90deg);
+  }
+  70% {
+    transform: rotateX(20deg);
+  }
+  100% {
+    transform: rotateX(0deg);
+  }
+}
+.dropdownItems button {
+  padding: 15px 20px;
+  text-align: left;
+  font-family: Montserrat;
+  font-size: clamp(0.8125rem, 0.7514rem + 0.3053vw, 0.9375rem);
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #313A4B;
+}
+.dropdownItems button:last-child {
+  border-radius: inherit;
+}
+.dropdown .btn_icon {
+  width: 17px;
+  height: 17px;
+}
+@media screen and (max-width: 975px) {
+  .dropdown .btn {
+    width: fit-content;
+    padding: 25px 35px;
+  }
+}

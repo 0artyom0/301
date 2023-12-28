@@ -1,0 +1,46 @@
+{
+	"info": {
+		"_postman_id": "557f3a5f-c6ce-4504-bf0e-8b7bfe525bcc",
+		"name": "301CreateLoginUserFavorite",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "29136911"
+	},
+	"item": [
+		{
+			"name": "createFavorite",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "user_id",
+							"value": "18",
+							"type": "text"
+						},
+						{
+							"key": "project_id",
+							"value": "[24,23]",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://301.machtech.site/api/create-user-favorite",
+					"protocol": "https",
+					"host": [
+						"301",
+						"machtech",
+						"site"
+					],
+					"path": [
+						"api",
+						"create-user-favorite"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

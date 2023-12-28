@@ -1,0 +1,108 @@
+.event_wrapper {
+  width: 350px;
+  border-radius: 20px;
+  background: #fff;
+  box-shadow: 0px 6px 28px rgba(34, 43, 60, 0.12);
+}
+.event_wrapper_img img {
+  width: 100%;
+  border-radius: inherit;
+}
+.event_address,
+.event_date {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.event_address p,
+.event_date p {
+  margin: 0;
+}
+.event_info {
+  padding: 30px 18px;
+}
+.event_title {
+  color: #151c26;
+  font-family: Montserrat;
+  font-size: 20px;
+  font-weight: 700;
+  margin: 0;
+}
+.event_desc {
+  color: rgba(49, 58, 75, 0.64);
+  font-family: Montserrat;
+  font-size: 16px;
+  font-weight: 500;
+  margin: 0;
+  margin-bottom: 10px;
+}
+.event_address,
+.event_date {
+  color: #151c26;
+  font-family: Montserrat;
+  font-size: 16px;
+  font-weight: 600;
+}
+.event_wrapper_img {
+  border-top-right-radius: 20px;
+  border-top-left-radius: 20px;
+}
+.event_info {
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+.event_address img,
+.event_date img {
+  width: 20px;
+  /* height: 20px; */
+}
+.event_date {
+  margin-top: 10px;
+}
+.calendar_participate_btn {
+  width: 100%;
+  margin-top: 25px;
+  background: #e6e6e6;
+  border: none;
+  padding: 9px 25px;
+}
+@media screen and (max-width: 1715px) {
+  .event_wrapper {
+    width: 300px;
+  }
+  .event_title {
+    font-size: 15px;
+  }
+  .event_address,
+  .event_date,
+  .event_desc {
+    font-size: 12px;
+  }
+}
+.recommended_event.event_wrapper {
+  width: 390px;
+}
+.recommended_event .event_title {
+  font-size: 13px;
+}
+@media screen and (max-width: 1600px) {
+  .recommended_event .event_info {
+    padding: 20px;
+  }
+  .recommended_event .event_date {
+    margin-top: 5px;
+  }
+  .recommended_event .event_address,
+  .recommended_event .event_date,
+  .recommended_event .event_desc {
+    font-size: 10px;
+  }
+  .recommended_event .event_address img,
+  .recommended_event .event_date img {
+    width: 15px;
+    /* height: 15px; */
+  }
+  .recommended_event .calendar_participate_btn {
+    font-size: 11px !important;
+  }
+}

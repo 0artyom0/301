@@ -1,0 +1,110 @@
+.calendar_header_wrapper {
+  flex-direction: column;
+}
+.calendar_filtering_wrapper {
+  width: 63vw;
+  padding-left: 50px;
+}
+.calendar_filtering_title {
+  color: #151c26;
+  text-align: justify;
+  font-size: 32px;
+  font-weight: 600;
+}
+.calendar_filter_item {
+  padding: 0;
+  color: #151c26;
+  font-weight: 600;
+  padding: 10px 20px;
+  border-radius: 46px;
+  font-size: 18px;
+}
+.calendar_filter_item:first-child {
+  background: #ee42e7;
+  color: #fff;
+}
+.calendar_filtering {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.calendar_filtering_date {
+  display: flex;
+  align-items: center;
+}
+.calendar_filtering_items {
+  display: flex;
+  align-items: center;
+}
+.calendar_date_item {
+  display: flex;
+  justify-content: space-between;
+}
+.calendar_date_item p {
+  margin: 0;
+  margin-right: 10px;
+  color: #151c26;
+  font-family: Montserrat;
+  font-weight: 600;
+}
+.calendar_dropdown {
+  background: #9b9b9b;
+}
+.calendar_selected_date,
+.calendar_dropdown {
+  color: #fff;
+  border-radius: 46px;
+  cursor: pointer;
+  padding: 10px 20px;
+}
+.calendar_selected_date {
+  background: #0038ff;
+  display: flex;
+  align-items: center;
+  margin-left: 10px;
+}
+.calendar_selected_date p {
+  margin: 0;
+  margin-right: 10px;
+}
+.calendar_dropdown,
+.calendar_date_item,
+.calendar_selected_date {
+  font-size: 18px;
+}
+@media screen and (max-width: 1890px) {
+  .calendar_filtering_title {
+    font-size: 20px;
+  }
+  .calendar_filter_item,
+  .calendar_dropdown,
+  .calendar_date_item,
+  .calendar_selected_date {
+    font-size: 14px;
+  }
+}
+@media screen and (max-width: 1600px) {
+  .calendar_filtering_title {
+    font-size: 18px;
+  }
+  .calendar_filter_item,
+  .calendar_dropdown,
+  .calendar_date_item,
+  .calendar_selected_date {
+    font-size: 12px;
+  }
+}
+.calendar_container .headerContainer,
+.calendar_filtering_wrapper,
+.calendars_wrapper {
+  width: 63vw;
+}
+.calendars_wrapper {
+  justify-content: center;
+  align-items: center;
+}
+.events_wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}

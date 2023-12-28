@@ -1,0 +1,276 @@
+.memberHeader {
+  background: #fff;
+  box-shadow: -15px 15px 46px 0px rgba(39, 78, 151, 0.12);
+  text-align: center;
+  /* padding: 35px 0; */
+  position: relative;
+  /* font-size: clamp(2rem, 0rem + 1.6667vw, 6rem); */
+  font-size: 36px;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 14%;
+  height: 107px;
+}
+.memberImg_container {
+  background: url(../../assets/ecosystemDetails/elipse-sages.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  width: 200px;
+  height: 200px;
+  position: relative;
+  /* position: absolute;
+  top: -50%;
+  left: 0; */
+}
+.memberImg {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 80%;
+  height: 80%;
+  border-radius: 50%;
+  object-fit: cover;
+}
+.memberElipse {
+  width: 190px;
+  height: 190px;
+}
+.memberContent p {
+  margin: 0;
+  color: rgba(49, 58, 75, 0.7);
+  font-weight: 500;
+}
+.memberContent {
+  padding: 60px 30px 40px 30px;
+  background: #fff;
+  box-shadow: -15px 15px 46px 0px rgba(39, 78, 151, 0.12);
+}
+.memberProjectHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+}
+.memberProjectHeader .btns {
+  margin: 0;
+}
+.memberProjectHeader .btns button {
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--main-color);
+  padding: 10px;
+  border-radius: 6px;
+  transition: 0.3s ease;
+}
+.memberProjectHeader .btns button:first-child {
+  transform: rotate(180deg);
+}
+.memberProjectHeader .btns button img {
+  filter: brightness(0) invert(1);
+  width: 15px;
+  height: 15px;
+}
+.memberProjectHeader p {
+  color: var(--text-color);
+  /* font-size: clamp(1.5rem, 0rem + 1.25vw, 4.5rem); */
+}
+.memberProjects {
+  margin-top: 50px;
+}
+.memberProjects span p,
+.memberProjects .flag {
+  font-weight: 500;
+  color: var(--text-color);
+}
+.project {
+  background: #fff;
+}
+.projectInfo_header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.ecoSystemDetailsMember .project {
+  width: 236px;
+  height: auto !important;
+}
+.ecoSystemDetailsMember .projectImg {
+  height: 130px;
+  width: 236px;
+  background-image: url(../../assets/projectAuthor/project-1.svg);
+}
+.ecoSystemDetailsMember {
+  background: #fff;
+  box-shadow: -15px 15px 46px 0px rgba(39, 78, 151, 0.12);
+  position: relative;
+}
+.otherProjects_link {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  width: fit-content;
+  margin-left: auto;
+  margin-top: 30px;
+}
+.ecoSystemDetailsMember .projects {
+  display: flex;
+  gap: 20px;
+  overflow: hidden;
+  z-index: 2;
+  position: relative;
+}
+.memberProjects_separatedPart {
+  height: 20px;
+  width: 100%;
+  background-color: #dde3ee;
+  position: absolute;
+  bottom: 200px;
+  left: 0;
+}
+.memberProjects span p {
+  /* font-size: clamp(0.75rem, 0rem + 0.625vw, 2.25rem); */
+}
+.memberProjects .projectInfo h1,
+.memberProjects .flag {
+  /* font-size: clamp(0.875rem, 0rem + 0.7292vw, 2.625rem); */
+}
+.memberProjects .flag img {
+  padding-top: 1px;
+  /* width: 0.5403645833333334vw; */
+}
+/* .memberHeader span {
+  padding-left: 100px;
+} */
+.ecosystemDetails_partners {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  gap: 20px;
+  align-items: center;
+}
+.ecosystemDetails_partners_item img {
+  width: 206.362px;
+  height: 125.037px;
+  border-radius: 4px;
+  border: 1px solid #d7d7d7;
+  object-fit: contain;
+}
+.ecosystemDetails_partners_item img {
+  /* width: 100%;
+  height: 100%;
+  object-fit: contain; */
+}
+@media screen and (max-width: 1610px) {
+  .ecosystemDetails_partners_item img {
+    width: 180px;
+    height: 110px;
+  }
+}
+@media screen and (max-width: 1420px) {
+  .ecosystemDetails_partners_item img {
+    width: 160px;
+    height: 100px;
+  }
+}
+@media screen and (max-width: 1280px) {
+  .ecosystemDetails_partners_item img {
+    width: 130px;
+    height: 80px;
+  }
+}
+@media screen and (max-width: 1110px) {
+  .ecosystemDetails_partners_item img {
+    width: 100px;
+    height: 60px;
+  }
+}
+@media screen and (max-width: 1600px) {
+  .memberHeader {
+    font-size: 26px;
+  }
+  .memberImg_container {
+    width: 160px;
+    height: 160px;
+  }
+}
+@media screen and (max-width: 1280px) {
+  .memberHeader {
+    font-size: 20px;
+  }
+  /* .memberImg_container {
+    width: 160px;
+    height: 160px;
+  } */
+}
+@media screen and (max-width: 600px) {
+  /* .memberImg {
+    width: 100px;
+    height: 100px;
+  }
+  .memberElipse {
+    width: 130px;
+    height: 130px;
+  } */
+  /* .memberImg_container {
+    top: 15px;
+  } */
+  /* .memberHeader {
+    padding-left: 110px;
+  } */
+  .memberProjectHeader p {
+    font-size: 16px;
+  }
+  .ecosystemDetails_projects {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  .ecoSystemDetailsMember .projectImg {
+    width: 100%;
+    height: 134px;
+  }
+  .ecosystemDetails_project {
+    width: 100% !important;
+  }
+  .memberImg_container {
+    width: 96px;
+    height: 96px;
+  }
+  .memberHeader {
+    height: 57px;
+  }
+  .memberContent {
+    padding: 60px 20px 40px 20px;
+  }
+  .ecosystemDetails_partners {
+    justify-content: center;
+  }
+  .ecosystemDetails_partners_item {
+    width: 121.13px;
+    height: 73.394px;
+  }
+}
+@media screen and (max-width: 416px) {
+  .memberElipse {
+    width: 100px;
+    height: 100px;
+  }
+  /* .memberImg {
+    width: 80px;
+    height: 80px;
+  } */
+  .memberImg_container {
+    /* top: -10%; */
+  }
+  .ecosystemDetails_project {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 350px) {
+}

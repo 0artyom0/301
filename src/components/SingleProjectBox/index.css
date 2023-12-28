@@ -1,0 +1,199 @@
+.project {
+  border-radius: 20px;
+  box-shadow: -15px 6px 28px rgba(34, 43, 60, 0.12);
+  width: 300px;
+}
+.projectImg {
+  height: 110px;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: inherit;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+}
+.projectInfo {
+  display: flex;
+  padding: 20px;
+  border-radius: inherit;
+  flex-direction: column;
+  gap: 10px;
+}
+.author,
+.flag {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 7px;
+}
+.flag {
+  font-weight: 500;
+}
+.flag img {
+  padding-top: 5px;
+}
+
+.projectInfo h1,
+.flag,
+.projectInfo span,
+.author {
+  font-size: 1vw;
+}
+.donation_project.project .donationProject_desc {
+  font-size: 0.78125vw;
+}
+.donation_project.project {
+  border-radius: 6px;
+  width: 19.3359375vw;
+  box-shadow: -6px 8px 30px rgba(26, 61, 127, 0.1);
+}
+.donation_project.project:not(.donateToProject) {
+  cursor: pointer;
+}
+.donation_project.project .projectImg {
+  width: 100%;
+  height: 155px;
+}
+
+.donation_project.project .ourProject__author,
+.ourProject__title {
+  margin-bottom: 0;
+  gap: 10px;
+  align-items: flex-start;
+}
+.personal_project {
+  height: fit-content;
+}
+.progress {
+  width: 100%;
+  border-radius: 8px;
+  height: 8px;
+  background: #d9d9d9;
+  margin-top: 5px;
+}
+.progress_line {
+  background: #189387;
+  border-radius: inherit;
+  width: 0%;
+  height: inherit;
+}
+.projectProgress_info {
+  display: flex;
+  justify-content: space-between;
+}
+.donation_project.project .projectInfo h1,
+.projectProgress_info {
+  font-size: 0.8vw;
+}
+.projectProgress_info .sum {
+  color: #4c4c4c;
+  font-weight: 500;
+}
+.projectProgress_info .percent {
+  color: rgba(76, 76, 76, 0.45);
+  font-weight: 500;
+}
+.donation_project.project .ourProject__author span {
+  color: var(--text-color);
+  font-weight: 700;
+  width: auto;
+}
+.donation_project.project .ourProject__author img {
+  width: 55px;
+  height: 55px;
+  aspect-ratio: 1 / 1;
+}
+.ecosystemDetails_project  {
+  border-radius: 6px;
+}
+@media screen and (max-width: 1600px) {
+  .donation_project.project .ourProject__author img {
+    width: 35px;
+    height: 35px;
+  }
+}
+.donation_project.project .projectInfo .flag img {
+  width: 1vw !important;
+}
+.personal_project .flag img {
+  padding-top: 0;
+  width: 15px;
+  height: 15px;
+}
+.personal_project .author h1,
+.personal_project .flag {
+  font-size: 14px;
+}
+.personal_project .donationProject_desc {
+  font-size: 12px;
+}
+.projectInfo_withoutDesc_home {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+@media screen and (max-width: 975px) {
+  .projectImg {
+    width: 100%;
+    height: 120px;
+  }
+  .projectInfo h1 {
+    font-size: clamp(0.875rem, 0rem + 4.375vw, 1.640625rem);
+  }
+  .projectInfo span {
+    font-size: clamp(0.75rem, 0rem + 3.75vw, 1.40625rem);
+  }
+  .author {
+    font-size: clamp(0.625rem, 0rem + 3.125vw, 1.171875rem);
+  }
+  .projectInfo h1,
+  .flag,
+  .projectInfo span,
+  .author {
+    font-size: 16px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .projectImg {
+    height: 72px;
+  }
+  .project {
+    width: clamp(7.875rem, 0rem + 39.375vw, 14.765625rem);
+    border-radius: 10px;
+  }
+  .projectInfo h1 {
+    font-size: clamp(0.8125rem, -0.0004rem + 4.0643vw, 1.52375rem);
+  }
+  .projectInfo span {
+    font-size: clamp(0.6875rem, -0.0004rem + 3.4393vw, 1.289375rem);
+    font-size: clamp(0.5625rem, -0.0004rem + 2.8143vw, 1.055rem);
+  }
+  .home_project {
+    width: 175px !important;
+  }
+  .donation_project.project .ourProject__author span {
+    width: auto;
+  }
+  .home_project .flag img {
+    width: 10px;
+  }
+  .home_project .projectInfo h1 {
+    font-size: 6px;
+  }
+}
+@media screen and (max-width: 395px) {
+  .home_project {
+    width: 165px !important;
+  }
+}
+@media screen and (max-width: 372px) {
+  .home_project {
+    width: 160px !important;
+  }
+}
+@media screen and (max-width: 360px) {
+  .home_project {
+    width: 134px !important;
+  }
+}

@@ -1,0 +1,56 @@
+.donationProjects {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 44px;
+  height: 50vh;
+  overflow-y: auto;
+}
+.donationProjects:has(.personal_project) {
+  justify-content: flex-start;
+}
+.donationProjects_wrapper {
+  background: #fff;
+  padding: 40px;
+}
+.donationProjects_title {
+  color: var(--text-color);
+  font-size: 1.5625vw;
+  font-weight: 600;
+  margin-bottom: 26px;
+}
+.donationProjects_spinner {
+  display: flex;
+  justify-content: center;
+}
+@media screen and (max-width: 800px) {
+  .donationProjects_wrapper {
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 50px;
+  }
+  .donationProjects {
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+  }
+  .donation_project.project {
+    width: 100%;
+  }
+  .donationProjects_title {
+    font-size: 18px;
+  }
+  .donation_project.project .ourProject__author .ourProject_author_img {
+    width: 38px;
+  }
+  .donation_project.project .projectInfo .flag img {
+    width: 15px !important;
+  }
+  .donation_project.project .projectInfo h1,
+  .projectProgress_info {
+    font-size: 14px;
+  }
+  .donation_project.project .donationProject_desc {
+    font-size: 12px;
+  }
+}

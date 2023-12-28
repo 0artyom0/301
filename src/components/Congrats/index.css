@@ -1,0 +1,17 @@
+.conragts_text {
+  color: rgba(49, 58, 75, 0.7);
+  font-weight: 500;
+  margin-top: 0;
+  margin-bottom: 30px;
+}
+.congrats_pattern {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+}
+.congrats_pattern img {
+  width: 30px;
+}
+.congrats_pattern img:nth-child(2) {
+  width: 70px;
+}

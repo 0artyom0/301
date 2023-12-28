@@ -1,0 +1,112 @@
+.aboutContainer {
+  background: url(../../assets/yerevan.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  box-shadow: inset 0 0 0 2000px rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 100px 0;
+}
+.aboutInner {
+  display: flex;
+  gap: 60px;
+  width: 63vw;
+}
+.aboutContent {
+  width: 70%;
+  color: #fff;
+  font-size: clamp(1.25rem, 0rem + 1.0417vw, 3.75rem);
+  font-weight: 500;
+  line-height: 30px;
+  text-align: justify;
+}
+.aboutContent p:first-child {
+  margin-bottom: 0;
+}
+.aboutContent p:nth-child(2) {
+  margin-top: 0;
+}
+@media screen and (max-width: 1920px) {
+  .aboutContent {
+    font-size: clamp(1.041875rem, 0.0013rem + 1.0406vw, 1.25rem);
+  }
+}
+@media screen and (max-width: 1600px) {
+  .aboutContent {
+    font-size: clamp(0.91125rem, -0.0031rem + 1.045vw, 1.041875rem);
+  }
+}
+@media screen and (max-width: 1400px) {
+  .aboutContent {
+    font-size: clamp(0.833125rem, -0.0002rem + 1.0417vw, 0.91125rem);
+  }
+}
+@media screen and (max-width: 1280px) {
+  .aboutContent {
+    font-size: clamp(0.71625rem, 0.002rem + 1.0389vw, 0.833125rem);
+  }
+}
+@media screen and (max-width: 1100px) {
+  .aboutContent {
+    font-size: clamp(0.520625rem, -0.001rem + 1.0433vw, 0.71625rem);
+  }
+}
+@media screen and (max-width: 800px) {
+  .aboutContent {
+    font-size: clamp(0.390625rem, 0.0006rem + 1.04vw, 0.520625rem);
+  }
+}
+@media screen and (max-width: 1280px) {
+  .aboutContent {
+    font-size: 16px;
+  }
+}
+@media screen and (max-width: 1100px) {
+  .aboutInner {
+    flex-direction: column;
+    align-items: center;
+  }
+  .aboutInner .btns {
+    display: none;
+  }
+  .aboutContent {
+    width: 100%;
+  }
+  .ant-dropdown-trigger {
+    background: var(--main-color);
+    color: #fff;
+    width: 100%;
+    padding: 23px;
+    border-radius: 45px;
+    cursor: pointer;
+    z-index: 1;
+    transition: z-index 0.6s ease;
+  }
+  .ant-space {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    text-transform: uppercase;
+    font-weight: 700;
+  }
+  .ant-dropdown-menu-title-content {
+    font-weight: 700;
+  }
+}
+@media screen and (max-width: 975px) {
+  .aboutContainer {
+    padding: 50px;
+    height: auto;
+  }
+  .aboutInner {
+    gap: 20px;
+  }
+  .aboutInner {
+    width: 100%;
+  }
+  .aboutInner {
+    height: auto;
+  }
+}

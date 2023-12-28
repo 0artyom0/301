@@ -1,0 +1,11 @@
+.personalInfo_event_content {
+  color: rgba(49, 58, 75, 0.7);
+  font-size: 20px;
+  font-weight: 500;
+  margin-bottom: 42px !important;
+}
+@media screen and (max-width: 1600px) {
+  .personalInfo_event_content {
+    font-size: 14px;
+  }
+}

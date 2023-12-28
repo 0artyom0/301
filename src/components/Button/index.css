@@ -1,0 +1,127 @@
+.btn {
+  padding: 12px 23px;
+  border-radius: 46px;
+  border: 2px solid var(--main-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: fit-content;
+  transition: 0.3s ease;
+  font-weight: 700;
+  font-family: "Montserrat", sans-serif;
+}
+.aboutInner .activeBtn {
+  transform: translateX(20px);
+  box-shadow: -21px 13px 29px rgba(221, 38, 78, 0.35);
+}
+.activeBtn {
+  background-color: var(--main-color) !important;
+  color: #fff !important;
+}
+.btn_icon {
+  width: 25px;
+  height: 25px;
+}
+.pagination .btn_icon {
+  width: 15px;
+  height: 15px;
+}
+.pagination_backBtn img {
+  transform: rotate(180deg);
+}
+.btn:not(
+    .lang,
+    .accountType_btn,
+    .view-btn,
+    .signIn-btn,
+    .recommented,
+    .donation_btn
+  ) {
+  font-size: clamp(1.125rem, 0rem + 0.9375vw, 3.375rem);
+}
+.donationBtn img {
+  width: 1.5vw !important;
+  height: auto;
+}
+@media screen and (max-width: 1920px) {
+  .btn:not(
+      .lang,
+      .accountType_btn,
+      .view-btn,
+      .signIn-btn,
+      .recommented,
+      .donation_btn
+    ) {
+    font-size: clamp(0.9375rem, 0rem + 0.9375vw, 1.125rem);
+  }
+}
+@media screen and (max-width: 1600px) {
+  .btn:not(
+      .lang,
+      .accountType_btn,
+      .view-btn,
+      .signIn-btn,
+      .recommented,
+      .donation_btn
+    ) {
+    font-size: clamp(0.820625rem, 0.0025rem + 0.935vw, 0.9375rem);
+  }
+}
+@media screen and (max-width: 1400px) {
+  .btn:not(
+      .lang,
+      .accountType_btn,
+      .view-btn,
+      .signIn-btn,
+      .recommented,
+      .donation_btn
+    ) {
+    font-size: clamp(0.75rem, -0.0033rem + 0.9417vw, 0.820625rem);
+  }
+}
+@media screen and (max-width: 1280px) {
+  .btn:not(
+      .lang,
+      .accountType_btn,
+      .view-btn,
+      .signIn-btn,
+      .recommented,
+      .donation_btn
+    ) {
+    font-size: clamp(0.644375rem, -0.0011rem + 0.9389vw, 0.75rem);
+  }
+}
+@media screen and (max-width: 1100px) {
+  .btn:not(
+      .lang,
+      .accountType_btn,
+      .view-btn,
+      .signIn-btn,
+      .recommented,
+      .donation_btn
+    ) {
+    font-size: clamp(0.46875rem, 0.0004rem + 0.9367vw, 0.644375rem);
+  }
+}
+@media screen and (max-width: 975px) {
+  .homePage_btn {
+    font-size: 15px !important;
+    /* padding: 17px !important; */
+  }
+  .donationBtn img {
+    width: 25px !important;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .btn:not(
+      .lang,
+      .accountType_btn,
+      .view-btn,
+      .signIn-btn,
+      .recommented,
+      .donation_btn
+    ) {
+    font-size: clamp(0.351875rem, 0.0012rem + 0.935vw, 0.46875rem);
+  }
+}

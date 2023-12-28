@@ -1,0 +1,23 @@
+.donation_form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.donation_form .signUp_formGroup,
+.donation_form .signUp_btns {
+  width: 300px;
+}
+@media screen and (max-width: 800px) {
+  .donation_form {
+    height: 100%;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .donation_form .signUp_formGroup,
+  .donation_form .signUp_btns {
+    width: 100%;
+  }
+  .oneTimeDonation_bg .signUp_content {
+    height: 100%;
+  }
+}

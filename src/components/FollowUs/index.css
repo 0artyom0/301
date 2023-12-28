@@ -1,0 +1,54 @@
+.verticalText {
+  writing-mode: vertical-lr;
+  display: inline-block;
+  text-orientation: mixed;
+  font-weight: 500;
+  color: #fff;
+}
+.followUsContainer .line {
+  height: 50px;
+  width: 1px;
+  border-radius: 2px;
+  background: #fff;
+}
+.socialMedias,
+.followUsContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+.socialMedias a {
+  width: 15px;
+  height: 15px;
+}
+.socialMedias a img {
+  width: 100%;
+  height: 100%;
+}
+.mainFollowUs .line {
+  background: #151c26;
+}
+.mainFollowUs .verticalText {
+  color: #151c26;
+}
+@media screen and (max-width: 975px) {
+  .mainFollowUs {
+    display: none;
+  }
+}
+@media screen and (max-width: 875px) {
+  .verticalText,
+  .followUsContainer .line {
+    display: none;
+  }
+  .socialMedias {
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+  }
+  .socialMedias a {
+    width: 22px;
+    height: 22px;
+  }
+}

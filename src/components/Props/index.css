@@ -1,0 +1,94 @@
+.propsContainer {
+  background-color: #fff;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 60px;
+  overflow-y: auto;
+  max-height: 500px;
+}
+.props1Container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.propsContainer p {
+  margin: 0;
+}
+.props1 {
+  width: 330px;
+  /* height: fit-content; */
+  padding: 10px;
+  border: 1px solid #333;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  /* gap: 20px; */
+}
+.propsMainInfo {
+  width: 500px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.propsMainInfo .propsInfoContainer {
+  align-items: center;
+}
+.propsTitle {
+  font-size: 16px;
+  font-weight: 700;
+  margin: 20px 0 !important;
+  margin-top: 30px !important;
+  text-align: center;
+}
+.propsInfoContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  width: 100%;
+}
+.propsInfo1 {
+  display: flex;
+  gap: 10px;
+  font-size: 13px;
+  font-weight: 500;
+}
+.accountHolderTitle {
+  font-weight: 600;
+}
+.valuta {
+  width: 45px;
+  height: 45px;
+  padding: 10px;
+  border: 1px solid #333;
+  border-radius: 50%;
+  position: absolute;
+  background-color: #fff;
+  top: -25px;
+}
+.valuta img {
+  width: 100%;
+  height: 100%;
+  object-fit: fill;
+}
+@media screen and (max-width: 900px) {
+  .props1Container {
+    gap: 50px;
+  }
+  .propsMainInfo {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 800px) {
+  .propsContainer {
+    gap: 100px;
+    padding-left: 16px;
+    padding-right: 16px;
+    max-height: 100%;
+  }
+}

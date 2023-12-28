@@ -1,0 +1,179 @@
+.signUp_content_accountTypes {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  background-color: #fff;
+  padding: 85px 20px;
+  position: relative;
+  border-radius: 6px;
+}
+.accountType_header,
+.accountType {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  justify-content: center;
+}
+.accountType {
+  flex-direction: column;
+  border-radius: 8px;
+  background: #fff;
+  box-shadow: 0px 4px 16px 0px rgba(49, 58, 75, 0.12);
+  padding: 20px 9px;
+  width: 224px;
+  /* height: 380px; */
+  gap: 35px;
+  z-index: 2;
+  position: relative;
+  transition: 0.3s ease;
+}
+.accountType:hover {
+  transform: translateY(-15px);
+}
+#accountType-1:hover {
+  box-shadow: 0px 4px 16px 0px rgba(24, 147, 135, 0.3);
+}
+#accountType-2:hover {
+  box-shadow: 0px 4px 16px 0px rgba(238, 136, 66, 0.3);
+}
+#accountType-3:hover {
+  box-shadow: 0px 4px 16px 0px rgba(66, 207, 238, 0.3);
+}
+#accountType-4:hover {
+  box-shadow: 0px 4px 16px 0px rgba(193, 45, 217, 0.3);
+}
+#accountType-5:hover {
+  box-shadow: 0 4px 16px 0 rgb(100, 66, 238);
+}
+.accountType_header img {
+  width: 40px;
+  height: 40px;
+  object-fit: none;
+}
+.accountType_header {
+  color: var(--text-color);
+  font-weight: 700;
+  /* font-size: clamp(1.25rem, 0rem + 1.0417vw, 3.75rem); */
+}
+.accountType_btn {
+  font-size: 12px;
+  padding: 9px 24px !important;
+}
+.accountTYpes_pattern {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 25rem;
+}
+.accountType_mainImg img {
+  width: 120px;
+  height: 120px;
+}
+@media screen and (max-width: 1440px) {
+  .accountType_header {
+    font-size: 17px;
+  }
+  .signUp_content_accountTypes {
+    padding: 60px 20px;
+  }
+  .close {
+    width: 25px;
+    height: 25px;
+  }
+  .accountTYpes_pattern {
+    width: 25rem;
+  }
+  .accountType_btn {
+    font-size: 10px;
+  }
+  .accountType {
+    width: 200px;
+    /* height: 345px; */
+  }
+}
+@media screen and (max-width: 1290px) {
+  .accountType_mainImg img {
+    width: 75px;
+    height: 143px;
+  }
+  .signUp_content_accountTypes {
+    padding: 60px 0;
+  }
+  .accountType {
+    width: 180px;
+    /* height: 40vh; */
+  }
+  .accountType_header {
+    font-size: 14px;
+  }
+}
+@media screen and (max-width: 1150px) {
+  .accountType_mainImg img {
+    width: 45px;
+    height: 113px;
+  }
+  .accountType_header,
+  .accountType {
+    gap: 10px;
+  }
+  .accountType_header {
+    font-size: 10px;
+  }
+  .accountType {
+    width: 150px;
+  }
+  .accountType_header img {
+    width: 30px;
+    height: 30px;
+    object-fit: contain;
+  }
+  .accountType_header:first-child img {
+    width: 15px;
+    height: 15px;
+  }
+  .accountType_btn {
+    font-size: 7px;
+  }
+  .accountTYpes_pattern {
+    width: 20rem;
+  }
+}
+@media screen and (max-width: 800px) {
+  .signUp_content_accountTypes {
+    margin: 0;
+  }
+  .accountType:hover {
+    transform: translateY(0);
+  }
+  .accountType {
+    padding-top: 45px;
+    padding-bottom: 45px;
+    justify-content: space-between;
+    width: 224px;
+    height: 369px;
+  }
+  .accountType_mainImg {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 25px;
+  }
+  .accountType_mainImg img {
+    width: 76px;
+    height: 150.733px;
+  }
+  .accountType_header {
+    font-size: 20px;
+  }
+  .accountType_header img {
+    width: 25px !important;
+    height: 35px !important;
+  }
+  .accountType_btn {
+    font-size: 14px;
+  }
+}

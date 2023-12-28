@@ -1,0 +1,177 @@
+.statusCardHolderWrapper {
+  display: flex;
+  gap: 50px;
+}
+.statusCard {
+  width: 355px;
+  height: 226px;
+  border-radius: 11px;
+  background: #dd264e;
+  box-shadow: -16px 16px 23.9px 0px rgba(8, 24, 55, 0.16);
+  color: #fff;
+  padding: 24px 30px 34px 28px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.statusCardInfo {
+  display: flex;
+  justify-content: space-between;
+}
+.statusChangeCard {
+  padding: 17px 24px;
+  border-radius: 9px;
+  background: #5cb4f9;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 14px;
+  font-weight: 500;
+  width: fit-content;
+  font-size: 16px;
+}
+.statusCardInfo p {
+  font-size: 24px;
+  font-weight: 700;
+}
+.statusCardId {
+  margin-bottom: 8px !important;
+  font-size: 26px;
+}
+.statusCardHolderName {
+  font-size: 20px;
+}
+.statusSubscriptionTitle {
+  color: #313a4b;
+  font-weight: 700;
+  font-size: 24px;
+}
+.statusSubscriptionData {
+  border-radius: 11px;
+  border: 1px solid #259bf7;
+  background: #f6fbff;
+  display: flex;
+  justify-content: space-between;
+  gap: 28px;
+  padding: 24px;
+  /* width: 350px; */
+}
+.statusMonthlySubs,
+.statusMonthlySubsDate {
+  color: #313a4b;
+  font-size: 18px;
+  font-weight: 700;
+}
+.statusSubscriptionWrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+.statusMonthlySubsDate span {
+  color: #aeaeae;
+  font-weight: 500;
+}
+.historyWrapper {
+  margin-top: 50px;
+}
+#historyTable {
+  border-collapse: collapse;
+  width: 100%;
+  display: table;
+}
+.historyTableHeader {
+  border-radius: 9px;
+  background: #f4f4f5;
+}
+.historyTableHeader th {
+  color: #313a4b;
+  font-size: 16px;
+  font-weight: 500;
+  padding: 17px 24px;
+  text-align: left;
+}
+.historyTableHeader th:first-child {
+  border-top-left-radius: 9px;
+  border-bottom-left-radius: 9px;
+}
+.historyTableHeader th:last-child {
+  border-top-right-radius: 9px;
+  border-bottom-right-radius: 9px;
+}
+#historyTable tbody td {
+  padding: 17px 24px;
+  color: #313a4b;
+  font-size: 18px;
+  font-weight: 500;
+  text-transform: capitalize;
+}
+#historyTable tbody td:nth-child(2) {
+  padding: 17px 24px;
+  font-family: Montserrat;
+  font-size: 16px;
+  font-weight: 500;
+}
+#historyTable tbody td:nth-child(3) {
+  padding: 17px 24px;
+  font-weight: 600;
+}
+.rejected {
+  color: #dd264e !important;
+}
+.payment_status {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+.rejected_reason {
+  width: 15px;
+  height: 15px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.rejected_reason img {
+  width: 100%;
+  height: 100%;
+}
+@media screen and (max-width: 1280px) {
+  .statusCardInfo p {
+    font-size: 18px;
+  }
+  .statusCardId {
+    font-size: 20px;
+  }
+  .statusCardHolderName {
+    font-size: 14px;
+  }
+  .statusSubscriptionTitle {
+    font-size: 18px;
+  }
+  .statusMonthlySubs,
+  .statusMonthlySubsDate {
+    font-size: 14px;
+  }
+  .statusChangeCard {
+    font-size: 12px;
+  }
+  .statusCardInfo img {
+    width: 60px;
+  }
+  .historyTableHeader th {
+    font-size: 14px;
+  }
+  #historyTable tbody td {
+    font-size: 12px;
+  }
+}
+@media screen and (max-width: 1100px) {
+  .statusCardHolderWrapper {
+    flex-direction: column;
+  }
+  .statusCard,
+  .statusChangeCard {
+    width: 100%;
+  }
+}

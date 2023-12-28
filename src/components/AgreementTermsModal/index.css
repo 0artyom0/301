@@ -1,0 +1,52 @@
+.agreementTerms {
+  height: 65vh;
+  overflow-y: auto;
+  color: #313a4b;
+  text-align: justify;
+  font-weight: 500;
+  line-height: 155%;
+  font-size: clamp(1.25rem, 0rem + 1.0417vw, 3.75rem);
+  background: #fff;
+  padding: 40px;
+}
+.agreementTerms_loading {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+@media screen and (max-width: 1920px) {
+  .agreementTerms {
+    font-size: clamp(1.041875rem, 0.0013rem + 1.0406vw, 1.25rem);
+  }
+}
+@media screen and (max-width: 1600px) {
+  .agreementTerms {
+    font-size: clamp(0.91125rem, -0.0031rem + 1.045vw, 1.041875rem);
+  }
+}
+@media screen and (max-width: 1400px) {
+  .agreementTerms {
+    font-size: clamp(0.833125rem, -0.0002rem + 1.0417vw, 0.91125rem);
+  }
+}
+@media screen and (max-width: 1280px) {
+  .agreementTerms {
+    font-size: clamp(0.71625rem, 0.002rem + 1.0389vw, 0.833125rem);
+  }
+}
+@media screen and (max-width: 1100px) {
+  .agreementTerms {
+    font-size: clamp(0.520625rem, -0.001rem + 1.0433vw, 0.71625rem);
+  }
+}
+@media screen and (max-width: 800px) {
+  .agreementTerms {
+    font-size: clamp(0.390625rem, 0.0006rem + 1.04vw, 0.520625rem);
+  }
+}
+@media screen and (max-width: 600px) {
+  .agreementTerms {
+    padding: 15px;
+    font-size: 16px;
+  }
+}

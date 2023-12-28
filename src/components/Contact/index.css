@@ -1,0 +1,73 @@
+.formContainer {
+  padding: 50px 0;
+  padding-top: 20px;
+  width: 63vw;
+}
+.formContainer,
+.formInputs {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 15px;
+}
+.formContainer .btns {
+  margin-left: auto;
+}
+.formInner {
+  display: flex;
+  gap: 20px;
+}
+.formInner,
+.formGroup input,
+textArea,
+.formGroup input::placeholder,
+textArea::placeholder {
+  font-size: 20px;
+}
+.form {
+  border-radius: 46px;
+  border: 2px solid rgba(0, 0, 0, 0.14);
+  box-shadow: -20px 8px 20px 0px rgba(21, 29, 39, 0.06);
+  padding: 12px 20px;
+  outline: none;
+  color: #303030;
+  font-family: Montserrat;
+}
+textarea.form {
+  border-radius: 10px;
+}
+.formGroup {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+  width: 100%;
+}
+.formGroup .form::placeholder,
+textArea::placeholder {
+  color: #303030;
+  font-weight: 500;
+}
+textArea {
+  resize: none;
+  height: 100%;
+  width: 100%;
+}
+@media screen and (max-width: 875px) {
+  .formInner {
+    flex-direction: column;
+  }
+  .formContainer {
+    padding: 60px 0;
+    width: 70vw;
+  }
+  .formInner,
+  .formGroup input,
+  textArea,
+  .formGroup input::placeholder,
+  textArea::placeholder {
+    font-size: 14px;
+  }
+  .form {
+    padding: 15px;
+  }
+}

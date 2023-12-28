@@ -1,0 +1,174 @@
+.filteringWrapper {
+  box-shadow: 0px 0px 16px rgba(49, 58, 75, 0.11);
+  padding-top: 50px;
+  padding-bottom: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 30px;
+  width: 100%;
+}
+.filteringBtnsWrapper {
+  border: 1px solid #313a4b;
+  border-radius: 46px;
+  margin-bottom: 50px;
+  margin-top: 30px;
+}
+.typedBtnsWrapper,
+.filteringBtnsWrapper {
+  display: flex;
+  align-items: center;
+}
+.filteringBtnsWrapper button {
+  padding: 0;
+  padding: 10px clamp(3.75rem, 0rem + 3.125vw, 11.25rem);
+  border-radius: inherit;
+  transition: 0.2s ease-in;
+  font-weight: bold;
+  font-family: Montserrat;
+  font-size: clamp(1.375rem, 0rem + 1.1458vw, 4.125rem);
+}
+.noProject,
+.ant-spin:not(.btn_spinner) {
+  margin-top: 60px;
+  margin-bottom: 100px;
+}
+.activeProjectBtn {
+  color: #fff;
+  background-color: #dd264e;
+}
+.ant-spin-dot-item {
+  background-color: #dd264e !important;
+}
+.btn_spinner .ant-spin-dot-item {
+  background-color: #fff !important;
+}
+.pagination {
+  margin-top: 30px;
+  margin-bottom: 60px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.pagination button {
+  color: var(--text-color);
+}
+.paginationBtn {
+  width: 20px;
+  height: 20px;
+  padding: 20px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #313a4b;
+  font-family: Montserrat;
+  font-size: 24px;
+  font-weight: 500;
+}
+.paginationBtn_active {
+  font-weight: 700;
+  scale: 1.1;
+  border: 2px solid #000;
+}
+.typedBtnsWrapper button {
+  font-size: clamp(1.125rem, 0rem + 0.9375vw, 3.375rem);
+}
+.filteringWrapper .ant-dropdown-trigger:nth-of-type(1) {
+  margin-bottom: 20px;
+}
+.filteringWrapper .ant-dropdown-trigger:nth-of-type(2) {
+  width: 63vw;
+  margin-right: auto;
+}
+.paginationBtnWrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+@media screen and (max-width: 1920px) {
+  .filteringBtnsWrapper button {
+    padding: 10px clamp(3.125rem, 0rem + 3.125vw, 3.75rem);
+    font-size: clamp(1.145625rem, -0.0013rem + 1.1469vw, 1.375rem);
+  }
+  .typedBtnsWrapper button {
+    font-size: clamp(0.9375rem, 0rem + 0.9375vw, 1.125rem);
+  }
+}
+@media screen and (max-width: 1600px) {
+  .filteringBtnsWrapper button {
+    padding: 10px clamp(2.734375rem, 0rem + 3.125vw, 3.125rem);
+    font-size: clamp(1.0025rem, 0.0006rem + 1.145vw, 1.145625rem);
+  }
+  .typedBtnsWrapper button {
+    font-size: clamp(0.820625rem, 0.0025rem + 0.935vw, 0.9375rem);
+  }
+}
+@media screen and (max-width: 1400px) {
+  .filteringBtnsWrapper button {
+    padding: 10px clamp(2.5rem, 0rem + 3.125vw, 2.734375rem);
+    font-size: clamp(0.916875rem, 0.0035rem + 1.1417vw, 1.0025rem);
+  }
+  .typedBtnsWrapper button {
+    font-size: clamp(0.75rem, -0.0033rem + 0.9417vw, 0.820625rem);
+  }
+}
+@media screen and (max-width: 1280px) {
+  .filteringBtnsWrapper button {
+    padding: 10px clamp(2.14875rem, 0.0022rem + 3.1222vw, 2.5rem);
+    font-size: clamp(0.7875rem, -0.0031rem + 1.15vw, 0.916875rem);
+  }
+  .typedBtnsWrapper button {
+    font-size: clamp(0.644375rem, -0.0011rem + 0.9389vw, 0.75rem);
+  }
+}
+@media screen and (max-width: 1100px) {
+  .filteringBtnsWrapper button {
+    padding: 10px clamp(1.5625rem, -0.0008rem + 3.1267vw, 2.14875rem);
+    font-size: clamp(0.573125rem, 0.0015rem + 1.1433vw, 0.7875rem);
+  }
+  .typedBtnsWrapper button {
+    font-size: clamp(0.46875rem, 0.0004rem + 0.9367vw, 0.644375rem);
+  }
+}
+@media screen and (max-width: 975px) {
+  .filteringBtnsWrapper,
+  .filteringBtnsWrapper button,
+  .typedBtnsWrapper,
+  .typedBtnsWrapper button {
+    width: 100%;
+  }
+  .filteringWrapper .headerContainer {
+    padding: 20px 0 !important;
+  }
+  .filteringWrapper {
+    padding: 20px;
+  }
+  .pagination {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    width: 100%;
+  }
+  .pagination .btn {
+    width: 40vw !important;
+  }
+  .pagination .btn,
+  .paginationBtn {
+    font-size: clamp(1rem, 0rem + 5vw, 1.875rem);
+  }
+  .pagination .btn_icon {
+    width: 10px;
+    height: 10px;
+  }
+}
+@media screen and (max-width: 800px) {
+  .filteringBtnsWrapper button {
+    padding: 10px clamp(1.171875rem, 0rem + 3.125vw, 1.5625rem);
+  }
+  .filteringWrapper {
+    padding: 90px 20px;
+  }
+}

@@ -1,0 +1,146 @@
+.signUp_header p {
+  margin: 0;
+}
+.signUp_bg {
+  background: #eaedf5;
+  border-radius: 9px;
+  width: 85rem;
+}
+.signUp_content {
+  padding: 20px;
+}
+.signUp_content_header {
+  background-color: var(--text-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 40px;
+  border-radius: 6px;
+  color: #fff;
+  position: relative;
+  font-size: 26px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.close {
+  width: 35px;
+  height: 35px;
+  position: absolute;
+  left: 50px;
+  padding: 0;
+  background-color: transparent;
+}
+.close img {
+  width: 100%;
+  height: 100%;
+}
+.modal_back .close {
+  display: flex;
+  align-items: center;
+  width: fit-content;
+  gap: 10px;
+  color: var(--text-color);
+  font-weight: 500;
+  line-height: 193.75%;
+  border-radius: 33px;
+  border: 1px solid rgba(49, 58, 75, 0.2);
+  background: #fff;
+  padding-left: 10px;
+  height: 30px;
+}
+.modal_back .close div {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  border: 1px solid rgba(49, 58, 75, 0.2);
+  background: #fff;
+  padding: 5px;
+}
+.conragts_modal {
+  width: 45rem !important;
+}
+.conragts_modal .signUp_content {
+  padding: 0;
+  border-radius: 9px;
+  background: #fff;
+}
+.conragts_modal .signUp_content_header .close {
+  display: none;
+}
+.conragts_modal_content {
+  padding: 35px 80px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+@media screen and (max-width: 1600px) {
+  .signUp_bg {
+    width: 80rem;
+  }
+}
+@media screen and (max-width: 1440px) {
+  .signUp_content_header {
+    font-size: 25px;
+    padding: 35px;
+  }
+  .signUp_bg {
+    width: 75rem;
+  }
+}
+@media screen and (max-width: 1290px) {
+  .signUp_bg {
+    width: 70rem;
+  }
+  .signUp_content_header {
+    font-size: 20px;
+  }
+}
+@media screen and (max-width: 1150px) {
+  .signUp_bg {
+    width: 60rem;
+  }
+}
+@media screen and (max-width: 970px) {
+  .signUp_bg {
+    width: 100%;
+  }
+  .modal {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 800px) {
+  .signUp_bg {
+    width: 100vw;
+    height: 100%;
+  }
+  .signUp_content {
+    padding: 0;
+  }
+  .close {
+    width: 30px;
+    height: 30px;
+    position: unset;
+    left: 20px;
+  }
+  .signUp_content_header {
+    font-size: 14px;
+    gap: 14px;
+    justify-content: flex-start;
+    padding-top: 45px;
+    padding-bottom: 45px;
+  }
+  .conragts_modal_content .btn {
+    font-size: 14px;
+  }
+  .conragts_modal {
+    width: auto !important;
+  }
+  .conragts_modal_content {
+    padding: 30px 10px;
+  }
+  .congrats_pattern {
+    margin: auto;
+  }
+}

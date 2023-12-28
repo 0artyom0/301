@@ -1,0 +1,126 @@
+.calendar_details_1_bg {
+  position: relative;
+  width: 100%;
+}
+.calendar_details_1_title {
+  margin: 0;
+  position: absolute;
+  bottom: 50px;
+  left: 70px;
+  color: #fff;
+  font-size: 60px;
+  font-weight: 700;
+  line-height: 97.396%;
+}
+.calendar_details_1 {
+  width: 75vw;
+  margin-top: 60px;
+}
+.calendar_details_1_bg img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+}
+.calendar_details_1_info_wrapper p {
+  margin: 0;
+}
+.calendar_details_address,
+.calendar_details_date,
+.calendar_details_price {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.calendar_details_address_wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+  color: #151c26;
+  /* font-size: 20px; */
+  font-weight: 600;
+  margin: 30px 0;
+}
+.calendar_details_btns {
+  display: flex;
+  align-items: flex-start;
+  gap: 7px;
+}
+.calendar_details_btns button img {
+  height: auto;
+  width: 14px;
+}
+.calendar_details_1_info_title {
+  color: #151c26;
+  font-weight: 700;
+}
+.calendar_details_1_info_desc {
+  color: rgba(49, 58, 75, 0.64);
+  font-weight: 500;
+  margin-top: 20px !important;
+}
+.calendar_details_1_info_wrapper {
+  display: flex;
+  /* align-items: center; */
+  gap: 15px;
+}
+.calendar_details_wrapper {
+  padding: 20px 10px;
+  background: #f9fbff;
+  border-radius: 3px;
+}
+.calendar_details_1_content,
+.calendar_details_1_info_map_wrapper {
+  border-radius: 3px;
+  background: #fff;
+  box-shadow: 0px 0px 9px 0px rgba(0, 0, 0, 0.07);
+  padding: 30px;
+  height: 100%;
+}
+.calendar_details_1_content {
+  width: 40%;
+}
+.calendar_details_1_info_map_wrapper {
+  width: 60%;
+}
+.calendar_details_1_info_map_wrapper {
+  height: 100%;
+}
+.calendar_details_1_info_map_wrapper .calendar_details_address {
+  color: #151c26;
+  font-weight: 600;
+  margin-top: 20px;
+}
+.calendar_details_1_info_desc,
+.calendar_details_1_info_wrapper p {
+  font-size: 14px;
+}
+.recommended_events_wrapper {
+  padding: 20px 10px;
+  margin-top: 20px;
+  border-radius: 3px;
+  background: #f9fbff;
+  box-shadow: 0px 0px 9px 0px rgba(0, 0, 0, 0.07);
+}
+.recommended_events_title {
+  color: #151c26;
+  font-weight: 700;
+  margin-top: 0;
+}
+.recommended_events {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.calendar_details_btns .btn {
+  font-size: 16px;
+}
+@media screen and (max-width: 1600px) {
+  .calendar_details_address img,
+  .calendar_details_date img,
+  .calendar_details_price img {
+    width: 15px;
+  }
+  .calendar_details_btns .btn {
+    font-size: 10px;
+  }
+}

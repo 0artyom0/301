@@ -1,0 +1,161 @@
+.footerContainer {
+  background: #151d27;
+  padding: 50px;
+  padding-bottom: 85px;
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+}
+.footerBg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url(../../assets/footer-line-bg.svg);
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.footerInfo {
+  display: flex;
+  gap: 100px;
+  justify-content: center;
+  color: #fff;
+  position: relative;
+  z-index: 3;
+}
+.list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin-top: 25px;
+  font-weight: 500;
+}
+.list a {
+  color: #fff;
+  font-weight: 500;
+}
+.footerThirdPart {
+  position: relative;
+  /* overflow: hidden; */
+}
+.footerThirdPart .list {
+  margin-top: 0;
+}
+.list span {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+.footerForthtPart,
+.ecosystemMenu {
+  position: relative;
+  z-index: 9999;
+}
+.footerInfo h2,
+.list,
+.footerForthtPart .verticalText {
+  font-size: clamp(1.25rem, 0rem + 1.0417vw, 3.75rem);
+}
+.ecosystemMenu {
+  display: flex;
+  gap: 60px;
+}
+.logo301Footer {
+  position: absolute;
+  right: -200px;
+  top: 110px;
+}
+.footerLine {
+  height: 50px;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background: #c0c0c0;
+  box-shadow: 0px 3px 16px rgba(49, 58, 75, 0.11);
+}
+@media screen and (max-width: 1920px) {
+  .footerInfo h2,
+  .list,
+  .footerForthtPart .verticalText {
+    font-size: clamp(1.041875rem, 0.0013rem + 1.0406vw, 1.25rem);
+  }
+}
+@media screen and (max-width: 1600px) {
+  .footerInfo h2,
+  .list,
+  .footerForthtPart .verticalText {
+    font-size: clamp(0.91125rem, -0.0031rem + 1.045vw, 1.041875rem);
+  }
+  .logo301Footer {
+    position: absolute;
+    right: -246px;
+    top: 50px;
+  }
+}
+@media screen and (max-width: 1400px) {
+  .footerInfo h2,
+  .list,
+  .footerForthtPart .verticalText {
+    font-size: clamp(0.833125rem, -0.0002rem + 1.0417vw, 0.91125rem);
+  }
+}
+@media screen and (max-width: 1280px) {
+  .footerInfo h2,
+  .list,
+  .footerForthtPart .verticalText {
+    font-size: clamp(0.71625rem, 0.002rem + 1.0389vw, 0.833125rem);
+  }
+  .footerBg {
+    background: url(../../assets/footer-line-bg-mobile.svg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+}
+@media screen and (max-width: 1100px) {
+  .footerInfo h2,
+  .list,
+  .footerForthtPart .verticalText {
+    font-size: clamp(0.520625rem, -0.001rem + 1.0433vw, 0.71625rem);
+  }
+  .logo301Footer {
+    right: -160px;
+    top: 100px;
+  }
+  .logo301Footer img {
+    width: 63vw;
+  }
+}
+@media screen and (max-width: 875px) {
+  .footerContainer {
+    padding-top: 50px;
+    padding-bottom: 0;
+  }
+  .footerInfo {
+    flex-direction: column;
+    gap: 50px;
+  }
+  .ecosystemMenu {
+    justify-content: space-between;
+  }
+  .footerInfo h2,
+  .list,
+  .footerForthtPart .verticalText {
+    font-size: 14px;
+  }
+  .logo301Footer {
+    width: 100%;
+    height: 100%;
+    position: static;
+  }
+  .logo301Footer img {
+    width: 100%;
+    height: 100%;
+  }
+  .footerLine {
+    height: 90px;
+  }
+}

@@ -1,0 +1,200 @@
+.ourProject__project {
+  background-color: #fff;
+  box-shadow: -6px 8px 30px rgba(26, 61, 127, 0.1);
+  display: flex;
+  width: 63vw;
+  border-radius: 20px;
+  margin-bottom: 30px;
+  height: 300px;
+}
+.ourProject__projectImg {
+  width: 50%;
+  border-radius: inherit;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+  overflow: hidden;
+}
+.ourProject__projectImg img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: inherit;
+}
+.ourProject__projectInner {
+  padding: 40px 50px 20px 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  width: 50%;
+}
+.ourProject__author,
+.ourProject__title {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  align-items: center;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+.ourProject__author {
+  margin-bottom: 15px;
+}
+.ourProject__title {
+  justify-content: space-between;
+}
+.ourProject_author_img {
+  border: 2px solid #dd264e;
+  border-radius: 50%;
+  padding: 2px;
+}
+.ourProject__author .ourProject_author_img {
+  width: 50px;
+  height: 50px;
+  aspect-ratio: 1 / 1;
+}
+.ourProject__author {
+  font-size: 18px;
+}
+.heart-btn {
+  background: transparent;
+  border-radius: 50%;
+  border: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  font-family: Montserrat;
+  color: var(--text-color);
+  font-weight: 500;
+}
+/* .heart-btn.liked .heart-pop {
+  animation-direction: normal;
+} */
+.ourProject__desc p {
+  margin: 0;
+}
+.heartWrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #ddd;
+  padding: 6px;
+  border-radius: 50%;
+}
+.view-btn,
+.heart-btn {
+  /* font-size: clamp(1.25rem, 0rem + 1.0417vw, 3.75rem); */
+}
+.home_project {
+  width: 220px;
+  height: 100%;
+}
+@media screen and (max-width: 1920px) {
+  /* .view-btn,
+  .heart-btn {
+    font-size: clamp(1.041875rem, 0.0013rem + 1.0406vw, 1.25rem);
+  } */
+}
+@media screen and (max-width: 1600px) {
+  /* .view-btn,
+  .heart-btn {
+    font-size: clamp(0.91125rem, -0.0031rem + 1.045vw, 1.041875rem);
+  } */
+  /* .ourProject__project {
+    height: 270px;
+  } */
+  .ourProject__desc {
+    font-size: 15px;
+  }
+  .ourProject__author {
+    margin-bottom: 20px;
+  }
+  .ourProject__author .ourProject_author_img {
+    width: 40px;
+    height: 40px;
+  }
+  .ourProject__author {
+    font-size: 16px;
+  }
+}
+@media screen and (max-width: 1400px) {
+  /* .view-btn,
+  .heart-btn {
+    font-size: clamp(0.833125rem, -0.0002rem + 1.0417vw, 0.91125rem);
+  } */
+}
+@media screen and (max-width: 1280px) {
+  /* .view-btn,
+  .heart-btn {
+    font-size: clamp(0.71625rem, 0.002rem + 1.0389vw, 0.833125rem);
+  } */
+}
+@media screen and (max-width: 1280px) {
+  /* .ourProject__title,
+  .ourProject__author {
+    font-size: clamp(0.625rem, 0rem + 1.25vw, 0.859375rem);
+  } */
+  /* .ourProject__desc,
+  .ourProject__projectInner .btns {
+    font-size: clamp(0.520625rem, -0.001rem + 1.0433vw, 0.71625rem);
+  } */
+}
+@media screen and (max-width: 1100px) {
+  /* .ourProject__title,
+  .ourProject__author {
+    font-size: clamp(0.625rem, 0rem + 1.25vw, 0.859375rem);
+  }
+  .ourProject__desc,
+  .ourProject__projectInner .btns {
+    font-size: clamp(0.520625rem, -0.001rem + 1.0433vw, 0.71625rem);
+  } */
+  .ourProject__projectInner {
+    padding: 30px clamp(1.301875rem, -0.0015rem + 2.6067vw, 1.790625rem);
+  }
+}
+@media screen and (max-width: 800px) {
+  .ourProject__project {
+    width: 90vw;
+  }
+  .ourProject__projectImg,
+  .ourProject__projectInner {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 600px) {
+  .ourProject__project {
+    flex-direction: column-reverse;
+    height: auto;
+  }
+  .ourProject__author,
+  .ourProject__title {
+    font-size: 16px;
+  }
+  .ourProject__author .ourProject_author_img {
+    width: 48px;
+  }
+  .ourProject__desc,
+  .ourProject__projectInner .btns {
+    font-size: 13px;
+    text-align: justify;
+    justify-content: space-between;
+  }
+  .ourProject__projectInner .btns {
+    flex-direction: row;
+  }
+  .ourProject__projectInner .btns button {
+    width: 100% !important;
+  }
+  .ourProject__projectImg {
+    border-radius: inherit;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+  }
+  .paginationBtn {
+    font-size: 20px !important;
+  }
+  .home_project .projectInfo {
+    padding: 8px;
+  }
+}

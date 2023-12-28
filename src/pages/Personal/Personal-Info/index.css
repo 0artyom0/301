@@ -1,0 +1,105 @@
+.personalInfo_wrapper p {
+  padding: 0;
+  margin: 0;
+}
+.personalInfo_wrapper {
+  padding: 45px;
+  width: 882px;
+  height: 100%;
+  border-radius: 20px;
+  background: #fff;
+  box-shadow: -15px 15px 38px 0px rgba(39, 78, 151, 0.07);
+  overflow: auto;
+}
+.personalInfo_title {
+  color: #313a4b;
+  font-size: 24px;
+  font-weight: 700;
+}
+.personalInfo_title_wrapper {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 17px;
+}
+.personalInfo_title_wrapper a {
+  padding: 0;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  color: var(--main-color);
+  font-size: 20px;
+  font-weight: 600;
+}
+.personalInfo_tel {
+  display: flex;
+  gap: 9px;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.personalInfo_about,
+.personalInfo_contact,
+.personalInfo_socialMedia {
+  margin-bottom: 27px;
+}
+.personalInfo_title {
+  margin-bottom: 17px !important;
+}
+.personalInfo_content,
+.personalInfo_tel,
+.personalInfo_socialMedia_item {
+  color: rgba(49, 58, 75, 0.7);
+  font-family: Montserrat;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+.personalInfo_title_wrapper .personalInfo_title {
+  margin: 0 !important;
+}
+.personalInfo_socialMedia_items_wrapper {
+  display: flex;
+  gap: 40px;
+}
+.personalInfo_socialMedia_items {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  border-right: 1px solid rgba(49, 58, 75, 0.34);
+  width: fit-content;
+  padding-right: 48px;
+}
+.personalInfo_socialMedia_items:last-child {
+  border: none;
+}
+.personalInfo_socialMedia_item {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+@media screen and (max-width: 1600px) {
+  .personalInfo_title {
+    font-size: 18px;
+  }
+  .personalInfo_content,
+  .personalInfo_tel,
+  .personalInfo_socialMedia_item,
+  .personalInfo_title_wrapper a {
+    font-size: 14px;
+  }
+  .personalInfo_title_wrapper a img {
+    width: 18px;
+    height: 18px;
+  }
+}
+@media screen and (max-width: 1280px) {
+  .personalInfo_wrapper {
+    width: 600px;
+  }
+}
+@media screen and (max-width: 1100px) {
+  .personalInfo_socialMedia_item img {
+    width: 15px;
+    height: 15px;
+  }
+}

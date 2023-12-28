@@ -1,0 +1,17 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Montserrat:wght@300;400;500;600;700&family=Poppins:ital,wght@0,200;1,300&display=swap");
+
+@font-face {
+  font-family: "Montserrat Arm";
+  src: url("./fonts/fonter.am_montserrat-armenian/Montserratarm-Medium.ttf");
+  font-display: block;
+}
+
+* {
+  font-family: "Montserrat", "Montserrat Arm", sans-serif;
+}
+input::placeholder {
+  font-family: "Montserrat", "Montserrat Arm", sans-serif;
+}
+body {
+  margin: 0;
+}

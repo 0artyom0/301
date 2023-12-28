@@ -1,0 +1,11 @@
+.recommendation_wrapper {
+  display: flex;
+  gap: 100px;
+}
+@media screen and (max-width: 800px) {
+  .recommendation_wrapper {
+    flex-direction: column;
+    width: 100%;
+    gap: 0;
+  }
+}

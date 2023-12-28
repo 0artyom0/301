@@ -1,0 +1,31 @@
+{
+	"info": {
+		"_postman_id": "6139430e-4f3d-496a-83a6-d1802d295648",
+		"name": "301recomendationUserList",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "29136911"
+	},
+	"item": [
+		{
+			"name": "ActivitiesUserList",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://301.machtech.site/api/get-recommendation-data",
+					"protocol": "https",
+					"host": [
+						"301",
+						"machtech",
+						"site"
+					],
+					"path": [
+						"api",
+						"get-recommendation-data"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

@@ -1,0 +1,77 @@
+.bgContainer {
+  position: relative;
+  overflow: hidden;
+}
+
+.pattern1,
+.pattern2 {
+  width: 80px;
+  height: 80px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.pattern1 img,
+.pattern2 img {
+  width: 100%;
+  height: 100%;
+}
+
+.pattern1 {
+  left: 60px;
+}
+
+.pattern2 {
+  right: 60px;
+}
+
+.bigPattern {
+  width: 20vw;
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  left: 50%;
+}
+
+.bigPattern img {
+  width: 100%;
+  height: 100%;
+}
+
+.sidePattern1,
+.sidePattern2 {
+  width: 100%;
+}
+.sidePattern1 img,
+.sidePattern2 img {
+  width: 100%;
+}
+.sidePattern2 {
+  transform: rotate(180deg);
+}
+.bgContent {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 100px 0;
+}
+@media screen and (max-width: 1600px) {
+  .bigPattern {
+    width: 24vw;
+  }
+}
+@media screen and (max-width: 975px) {
+  .pattern1,
+  .pattern2 {
+    display: none !important;
+  }
+  .bigPattern {
+    width: 38vw;
+  }
+}
+@media screen and (max-width: 700px) {
+  .bigPattern {
+    width: 65vw;
+  }
+}
